@@ -1,0 +1,85 @@
+<!--THE PAGE YOU ARE REDIRECTED TO IF THE USER WINS-->
+
+<html>
+
+<!--CSS STYLING-->
+<style>
+button {
+height:50px;
+width:100px;
+vertical-align: text-bottom;
+border-radius:25px;
+font-size:18px;
+transform-style: preserve-3d;
+}
+
+p{
+font-family:helvetica;
+font-size:30px;
+color:red;
+}
+
+h2{
+font-size:40px;
+font-family:verdana;
+color:white;
+}
+
+button:after {
+top: -100%;
+left: 0px;
+width: 100%;
+position: absolute;
+background: #3a9999;
+border-radius: 25px;
+content: 'Are You Sure?';
+transform-origin: left bottom;
+transform: rotateX(90deg);
+}
+
+h1{
+color:red;
+}
+
+button:hover {
+transform-origin: center bottom;
+transform: rotateX(-90deg) translateY(100%);
+}
+
+body{
+background-color:black;
+height: 100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+</style>
+
+<body>
+
+<!--music in the background-->
+	<embed src="music4.mp3" width="180" height="90" loop="false" autostart="false" hidden="true" />
+
+		<center>
+		
+<h1>GAMEOVER</h1>
+			<br>
+	
+	<h2>Well Done Jack! You have Defeated the Robots and Reached Thanos, He Recognizes Your Persistence, You may now Join Him in His Quest of Eternal Balance</h2>
+			
+			<br>
+			<img src="thanos.jpg" alt="InfinityWar" width="300" height="325">
+			<br>
+			
+			<br>
+
+<!--button taken back to main menu-->
+	<a href="home.html"><button>Return</button></a>
+
+
+</center>
+
+</body>
+
+</html>

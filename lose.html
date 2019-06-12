@@ -1,0 +1,105 @@
+<!--THE PAGE YOU ARE REDIRECTED TO IF THE USER LOSES-->
+
+<html>
+
+<!--CSS STYLING-->
+<style>
+button {
+height:50px;
+width:100px;
+vertical-align: text-bottom;
+border-radius:25px;
+font-size:18px;
+transform-style: preserve-3d;
+}
+
+p{
+font-family:helvetica;
+font-size:30px;
+color:red;
+}
+
+h1{
+font-size:60px;
+font-family:verdana;
+color:white;
+}
+
+button:after {
+top: -100%;
+left: 0px;
+width: 100%;
+position: absolute;
+background: #3a9999;
+border-radius: 25px;
+content: 'Are You Sure?';
+transform-origin: left bottom;
+transform: rotateX(90deg);
+}
+
+button:hover {
+transform-origin: center bottom;
+transform: rotateX(-90deg) translateY(100%);
+}
+
+body{
+background-image: url("background2.png");
+height: 100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+</style>
+
+<body>
+
+<!--music in the background-->
+	<embed src="losemusic.mp3" width="180" height="90" loop="false" autostart="false" hidden="true" />
+
+		<center>
+
+			<br>
+	
+	<h1>Jack lost! He Stills Need your Help!</h1>
+			
+			<br>
+			<br>
+<!--button taken back to game-->
+	<a href="Test.html"><button>Play Again</button></a>
+
+			<br>
+			<br>
+			<br>
+
+	<p>or return to the Home Page</p>
+	
+			<br>
+			<br>
+			<br>
+<!--button taken back to main menu-->
+	<a href="home.html"><button>Return</button></a>
+
+
+ <script>
+//code to tell you how the the button will take user back to main menu or the game
+var mainPage = 'Test.html'
+
+function playerOpt(type) {
+if (type=="p_a") {
+window.location.replace(mainPage);
+}
+else if (type=="m_m") {
+window.location.replace("");
+}
+}
+
+ </script>
+
+
+
+</center>
+
+</body>
+
+</html>

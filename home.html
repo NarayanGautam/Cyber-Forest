@@ -1,0 +1,75 @@
+<!--HOME PAGE-->
+<html>
+<head>
+
+<!--CSS STYLING-->
+	<style>
+body {
+background-image: url("background2.gif");
+height: 100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+p {font-size: 50px; color:black;}
+button {width:105px; height:65px; font-size:15px; background-color: #202020; color: white; font-family: 'VT323', monospace; margin:2px; border-radius:20px;}
+button:hover {background-color:gray;}
+button:active {background-color: gray; box-shadow: 0 5px #666; transform: translateY(4px);}
+
+#start {
+outline: 0;
+ opacity: 1;
+-webkit-animation: bounce .3s infinite alternate;
+-moz-animation: bounce .3s infinite alternate;
+animation: bounce .3s infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.2); }
+}
+
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.2); }
+}
+
+@keyframes bounce {
+  to { transform: scale(1.2); }
+}
+
+	</style>
+
+</head>
+<body>
+ <!--music in the background-->
+	<embed src="music2.mp3" width="180" height="90" loop="false" autostart="false" hidden="true" />
+	<center>
+ 
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		<p>CyberForest</p>
+			<br>
+			<br>
+			
+ <div class="text">
+
+		
+	
+			<br>
+
+	
+		
+<!--THE LINK ON THE BUTTON TO REDIRECT THE USER TO THE GAME-->
+		<a href="Test.html"><button id="start">PLAY</button></a>
+	<br>
+	<br>
+	<a href="aboutandhelp.html"><button id="start">Help/About</button></a>
+	</center>	
+
+ </div>
+</body>
+</html>
